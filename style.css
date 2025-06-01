@@ -1,0 +1,157 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************** FONTE *****************/
+
+/*H1*/
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* h2*/
+.cormorant-sc-light {
+  font-family: "Cormorant SC", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*H3*/
+.gfs-didot-regular {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* p */
+.antic-didone-regular {
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Annie use your telescope */
+.annie-use-your-telescope-regular {
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/************* FORSIDE ****************/
+
+h1 {
+  font-family: "Pinyon Script";
+}
+
+h2 {
+  font-family: "Cormorant SC";
+  font-weight: 300;
+  font-size: 180%;
+  margin-bottom: 4%;
+}
+
+h3 {
+  font-family: "GFS Didot";
+}
+
+body {
+  line-height: 270%;
+}
+
+p {
+  font-family: "Antic Didone";
+  font-size: 90%;
+}
+
+.video_baggrund {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.forside_video {
+  position: absolute;
+  min-width: auto;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.video_tekst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  line-height: 270%;
+}
+
+i {
+  display: inline-block;
+  margin-top: 120px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+}
+
+#introduktion {
+  padding: 2rem;
+  margin: 1rem 0;
+  max-width: 800px;
+}
+
+.xoxo {
+  font-family: "Annie Use Your Telescope";
+  margin-left: 60%;
+  font-size: 220%;
+}
+
+.forside_billede,
+.forside_billede2 {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.ny_linje {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+  width: 80%; /* optional */
+}
+
+.linje {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.billede_tekst {
+  font-family: "Annie Use Your Telescope";
+  text-decoration: underline;
+  font-size: 140%;
+  text-align: center;
+  margin-bottom: 5%;
+}
