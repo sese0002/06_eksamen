@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +25,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet" />
     <title>Om side</title>
   </head>
-  <body class="body_1">
-    <main>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.webp" alt="Logo" />
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="om.html" class="active">Om mig</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main class="body_1">
       <h1>Hvem er</h1>
       <div class="h1_seraphine">
         <h1>Seraphine Selawry?</h1>
@@ -79,14 +100,18 @@
         <p>Rungsted Gymnasium</p>
         <p>2019-2022</p>
       </div>
-      <img class="icon" src="img/icon_2.webp" alt="icon af en computer" />
+      <img class="icon" src="img/movie_15060710.webp" alt="icon af en computer" />
       <div class="h1_underline">
         <h1>Hvad har jeg lært af første semester?</h1>
       </div>
       <p>Jeg har lært rigtig meget om grundlæggende webdesign på kort tid. Før havde jeg aldrig prøvet at kode, men efter under fire måneder har jeg allerede lavet min egen portfolio-hjemmeside. Ud over HTML, CSS og JavaScript har jeg lært programmer som Figma, Illustrator og Photoshop samt researchmetoder og designprincipper. Det føles næsten som at lære et nyt sprog, og det er vildt, hvor hurtigt det går, når man først kommer i gang.</p>
       <p>Samtidig har jeg genopdaget glæden ved at lære og føler mig langt mindre skoletræt end i gymnasiet. Det passer perfekt til min læringsstil, som er praktisk og hands-on – præcis som på Multimediedesign på KEA.</p>
       <div class="button_container">
-        <button>Min portfolio</button>
+        <a href="portfolio.html" class="button">Min portfolio</a>
+      </div>
+      <div class="grid_1-1">
+        <img src="img/screen1.webp" alt="billede af pigerne på trappen" />
+        <img src="img/screen2.webp" alt="billede af 3 piger" />
       </div>
     </main>
     <footer>
@@ -102,5 +127,6 @@
         </div>
       </div>
     </footer>
+    <script src="menu.js" defer></script>
   </body>
 </html>
