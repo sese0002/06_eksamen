@@ -185,12 +185,20 @@ h3 {
 }
 
 body {
-  line-height: 270%;
+  line-height: 45px;
 }
 
 p {
   font-family: "Antic Didone";
   font-size: 90%;
+  max-width: 40rem;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 17px;
+    line-height: 49px;
+  }
 }
 
 .video_baggrund {
@@ -202,19 +210,18 @@ p {
 
 .forside_video {
   position: absolute;
-  min-width: auto;
-  min-height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120%;
+  height: auto;
+  width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 .video_tekst {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -222,9 +229,40 @@ p {
   line-height: 270%;
 }
 
-i {
-  display: inline-block;
-  margin-top: 120px;
+.video_tekst h3 {
+  font-size: 90%;
+}
+
+@media (min-width: 800px) {
+  .forside_video {
+    height: 230%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top; /* or try: center -30% for higher focus */
+  }
+
+  .video_baggrund {
+    white-space: wrap;
+    height: 88vh;
+  }
+
+  @media (min-width: 800px) {
+    h1 {
+      font-size: 370%;
+      padding: 2%;
+    }
+
+    h3 {
+      font-size: 120%;
+    }
+  }
+}
+
+.chevron_down {
+  position: absolute;
+  left: 50%;
+  bottom: 30px; /* move it up or down from the bottom of the video */
+  transform: translateX(-50%);
   font-size: 2rem;
   color: white;
   text-decoration: none;
@@ -237,10 +275,37 @@ i {
   max-width: 800px;
 }
 
+#introduktion h2 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  #introduktion h2 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 800px) {
+  #introduktion {
+    margin-left: 8%;
+    max-width: 60%;
+    padding: 1rem;
+  }
+}
+
 .xoxo {
   font-family: "Annie Use Your Telescope";
-  margin-left: 60%;
-  font-size: 220%;
+  margin-left: 40%;
+  font-size: 45px;
+  padding: 40px;
+}
+
+@media (min-width: 800px) {
+  .xoxo {
+    margin-left: 60%;
+    font-size: 60px;
+    padding: 45px;
+  }
 }
 
 .forside_billede,
@@ -251,20 +316,22 @@ i {
   height: auto;
 }
 
-.ny_linje {
-  border: none;
-  height: 2px;
-  background-color: #ccc;
-  margin: 20px 0;
-  width: 80%; /* optional */
-}
-
 .linje {
   border: none;
   height: 1px;
   background-color: black;
-  margin: 40px auto;
+  margin: 30px auto;
   width: 70%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .linje {
+    width: 100%;
+    max-width: 700px; /* or whatever max size you want */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .billede_tekst {
@@ -274,6 +341,69 @@ i {
   margin-bottom: 5%;
   display: block;
   color: black;
+}
+
+@media (min-width: 768px) {
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 65px;
+  }
+
+  .container1 img {
+    width: 380px;
+    height: auto;
+    object-fit: cover;
+    margin-right: -31rem;
+  }
+}
+
+.image_grid {
+  padding: 2rem;
+  margin: 1rem 0;
+  max-width: 800px;
+}
+
+.introduktion_2 {
+  margin-left: 8%;
+  max-width: 60%;
+}
+
+@media (min-width: 800px) {
+  .introduktion_2 {
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .image_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem; /* or 2rem */
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1000px; /* Optional, to control layout width */
+  }
+
+  .image_grid img {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .billede_tekst {
+    display: block;
+    text-decoration: underline;
+    color: black;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 /************ FOOTER *********/
@@ -359,6 +489,18 @@ footer {
   line-height: 120%;
 }
 
+@media (min-width: 800px) {
+  .body_1 {
+    margin-left: 8%;
+    max-width: 60%;
+    padding: 1rem;
+  }
+
+  .body_1 h1 {
+    font-size: 60px;
+  }
+}
+
 .h1_seraphine {
   margin-left: 5%;
   margin-bottom: 6%;
@@ -368,19 +510,51 @@ footer {
   font-size: 2.2rem;
 }
 
+@media (min-width: 800px) {
+  .om_tekst::first-letter {
+    font-size: 4rem;
+  }
+}
+
 .icon {
   display: block;
   width: 20%;
   margin: 0 auto;
   height: auto;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .om_billede {
   display: block;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container2 .om_billede {
+    width: 380px;
+    height: auto;
+    object-fit: cover;
+    margin-right: -31rem;
+  }
+
+  .container2 .icon {
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 20px;
+  }
 }
 
 /* ERHVERSERFARING CONTAINER */
@@ -512,7 +686,7 @@ li {
 
 /******** PORFOLIO *********/
 
-.body_1 {
+.body_2 {
   padding: 2rem;
   margin: 1rem 0;
   max-width: 800px;
