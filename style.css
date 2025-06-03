@@ -547,7 +547,7 @@ li {
 /****** PORTFOLIO - MOBILSITE */
 
 .overskrifter h3 {
-  font-family: "Annie Use Your Telescope";
+  font-family: "Cormorant SC";
   font-weight: 150;
   margin-bottom: 15%;
 }
@@ -557,7 +557,7 @@ li {
   display: inline-block;
   margin-right: 30px;
   font-size: 230%;
-  font-family: "Annie Use Your Telescope";
+  font-family: "Cormorant SC";
   margin-top: 15%;
 }
 
@@ -568,7 +568,7 @@ li {
   left: 110%;
   margin-left: 10px;
   height: 1px;
-  width: 280px;
+  width: 220px;
   background-color: black;
 }
 
@@ -634,4 +634,60 @@ li {
 .mobil-container video {
   width: 40%;
   height: auto;
+}
+
+/************* PORTFOLIO Animation *************/
+
+.overskrifter_01 h3 {
+  font-family: "Cormorant SC";
+  font-weight: 150;
+  margin-bottom: 15%;
+}
+
+.overskrifter_01 h2 {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 230%;
+  font-family: "Cormorant SC";
+  margin-top: 15%;
+}
+
+.overskrifter_01 h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  margin-left: 10px;
+  height: 1px;
+  width: 190px;
+  background-color: black;
+}
+
+/************ PORTFOLIO Virskomhedssite *******/
+
+.overskrifter_02 h3 {
+  font-family: "Cormorant SC";
+  font-weight: 150;
+  margin-bottom: 15%;
+}
+
+.overskrifter_02 h2 {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 230%;
+  font-family: "Cormorant SC";
+  margin-top: 15%;
+}
+
+.overskrifter_02 h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  margin-left: 10px;
+  height: 1px;
+  width: 100px;
+  background-color: black;
 }
