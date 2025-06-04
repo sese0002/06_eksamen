@@ -7,6 +7,15 @@
   margin-bottom: 7%;
 }
 
+@media (min-width: 800px) {
+  .grid_1-1 {
+    max-width: 90%;
+    gap: 80px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}
+
 /* PORTFOLIO*/
 
 .row {
@@ -17,4 +26,10 @@
   display: block;
   margin-top: 2%;
   margin-bottom: 5%;
+}
+
+@media (min-width: 800px) {
+  .column a {
+    margin-bottom: 3%;
+  }
 }

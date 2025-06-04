@@ -25,90 +25,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet" />
     <title>Animation</title>
   </head>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logo.webp" alt="Logo" />
-        </a>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.webp" alt="Logo" />
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="om.html">Om mig</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main class="body_1">
+      <div class="baggrundsfarve">
+        <h1>Mine projekter:</h1>
+        <div class="row">
+          <a href="portfolio.html" class="button_portfolio">Mobilsite</a>
+          <a href="emnesite.html" class="button_portfolio">Emnesite</a>
+        </div>
+        <div class="column">
+          <a href="animation.html" class="button_portfolio active">Animation / spil</a>
+          <a href="redesign.html" class="button_portfolio">Virksomhedssite</a>
+        </div>
       </div>
-      <ul class="menu">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="om.html">Om mig</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      </ul>
 
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <div class="overskrifter">
+        <h2>Animation</h2>
+        <h3>03_Grundlæggende_animation</h3>
       </div>
-    </nav>
-  </header>
-  <main class="body_1">
-    <h1>Mine projekter:</h1>
-    <div class="row">
-      <a href="portfolio.html" class="button_portfolio">Mobilsite</a>
-      <a href="emnesite.html" class="button_portfolio">Emnesite</a>
-    </div>
-    <div class="column">
-      <a href="animation.html" class="button_portfolio active">Animation / spil</a>
-      <a href="redesign.html" class="button_portfolio">Virksomhedssite</a>
-    </div>
 
-    <div class="overskrifter_01">
-      <h2>Animation</h2>
-      <h3>03_Grundlæggende_animation</h3>
-    </div>
+      <div class="container_portfolio">
+        <div class="portfolio_tekst">
+          <h2>1. Løsning:</h2>
+          <p>Opgaven gik ud på at udvikle et interaktivt spil ved hjælp af JavaScript og Adobe Illustrator. Jeg designede mit eget spilkoncept og lavede grafikken som vektorfiler, som jeg derefter integrerede i selve spillet. Mit endelige produkt blev et børnevenligt spil om en gris ved navn ”Trøffel og de flyvende baconstykker”, hvor målet er at klikke alle de flyvende baconstykker væk for at vinde.</p>
+        </div>
 
-    <div class="portfolio_tekst">
-      <h2>1. Løsning:</h2>
-      <p>Opgaven gik ud på at udvikle et interaktivt spil ved hjælp af JavaScript og Adobe Illustrator. Jeg designede mit eget spilkoncept og lavede grafikken som vektorfiler, som jeg derefter integrerede i selve spillet. Mit endelige produkt blev et børnevenligt spil om en gris ved navn ”Trøffel og de flyvende baconstykker”, hvor målet er at klikke alle de flyvende baconstykker væk for at vinde.</p>
-    </div>
-
-    <div class="video-container">
-      <video autoplay muted loop playsinline><source src="img/animation_portfolio.mov" /></video>
-    </div>
-
-    <div class="portfolio_tekst">
-      <h2>2. Process:</h2>
-      <p>Forløbet byggede på en iterativ arbejdsmetode, hvor vi startede med idéudvikling, skitser, aktivitetsdiagrammer og statemachine-diagrammer for at strukturere spillets logik. Vi arbejdede løbende med små øvelser og delopgaver, som hjalp os med at forstå både programmering og brugergrænseflade-design. Undervejs designede jeg selv både grafik og interaktive elementer i Illustrator, så hele spillet var mit eget udtryk fra idé til færdigt produkt.</p>
-    </div>
-    <img class="mobilsite_img" src="img/aktivitetsdiagram.webp" alt="billede af aktivitetsdiagram" />
-    <div class="portfolio_tekst">
-      <h2>3. Læring:</h2>
-      <p>Jeg fik en grundlæggende forståelse for Illustrator, JavaScript og hvordan man skaber interaktive brugeroplevelser. Jeg lærte at arbejde med programmering i kombination med grafisk design og fik indblik i, hvordan man opbygger funktionel spilstruktur gennem planlægningsværktøjer som aktivitets- og statemachinediagrammer. Det var udfordrende, men de mange øvelser undervejs gav en tydelig fornemmelse af progression og sikkerhed i mit arbejde.</p>
-    </div>
-
-    <div class="citat">
-        <p>“Selv en gris i badekar kan lære dig noget om brugervenligt design” - figne</p>
+        <div class="video-container">
+          <video autoplay muted loop playsinline><source src="img/animation_portfolio.mov" /></video>
+        </div>
       </div>
-    <img class="mobilsite_img" src="img/forside_animation.webp" alt="forside animation" />
-    <hr class="linje" />
 
-    <div class="portfolio_tekst">
-      <h2>Link til det færdige produkt:</h2>
-      <ul>
-        <li><a href="https://keepingupwithfigne.dk/kea/04_animation/website/index.html" target="_blank">https://keepingupwithfigne.dk/kea/04_animation/spil</a></li>
-      </ul>
-    </div>
-    <div class="button_container">
-      <a href="animation.html" class="button">Tilbage til toppen</a>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <img class="sløjfe" src="img/tegning.webp" alt="tegning af en sløjfe" />
-        <p>Email: seraphineselawry@gmail.com</p>
-        <p>Telefon:+454701992</p>
+      <div class="process-section">
+        <div class="portfolio_tekst">
+          <h2>2. Process:</h2>
+          <p>Forløbet byggede på en iterativ arbejdsmetode, hvor vi startede med idéudvikling, skitser, aktivitetsdiagrammer og statemachine-diagrammer for at strukturere spillets logik. Vi arbejdede løbende med små øvelser og delopgaver, som hjalp os med at forstå både programmering og brugergrænseflade-design. Undervejs designede jeg selv både grafik og interaktive elementer i Illustrator, så hele spillet var mit eget udtryk fra idé til færdigt produkt.</p>
+        </div>
+
+        <img class="mobilsite_img" src="img/forside_animation.webp" alt="billede af forside animation" />
       </div>
-      <img src="img/iconer.webp" alt="billede af icons sociale medier" class="footer-img" />
-      <div class="footer-links">
-        <p>Copyright © 2025 Seraphine Selawry</p>
+      <div class="container_portfolio">
+        <div class="portfolio_tekst">
+          <h2>3. Læring:</h2>
+          <p>Jeg fik en grundlæggende forståelse for Illustrator, JavaScript og hvordan man skaber interaktive brugeroplevelser. Jeg lærte at arbejde med programmering i kombination med grafisk design og fik indblik i, hvordan man opbygger funktionel spilstruktur gennem planlægningsværktøjer som aktivitets- og statemachinediagrammer. Det var udfordrende, men de mange øvelser undervejs gav en tydelig fornemmelse af progression og sikkerhed i mit arbejde.</p>
+          <div class="citat">
+            <p>“Selv en gris i badekar kan lære dig noget om brugervenligt design” - figne</p>
+          </div>
+        </div>
+
+        <img class="mobilsite_img2" src="img/aktivitetsdiagram.webp" alt="aktivitetsdiagram" />
       </div>
-    </div>
-  </footer>
-  <script src="menu.js" defer></script>
-</body>
+
+      <hr class="linje" />
+
+      <div class="portfolio_tekst1">
+        <h2>Link til det færdige produkt:</h2>
+        <ul>
+          <li><a href="https://keepingupwithfigne.dk/kea/04_animation/website/spil.html " target="_blank">https://keepingupwithfigne.dk/kea/04_animation/redesign</a></li>
+        </ul>
+      </div>
+
+      <div class="button_container">
+        <a href="animation.html" class="button">Tilbage til toppen</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img class="sløjfe" src="img/tegning.webp" alt="tegning af en sløjfe" />
+          <p>Email: seraphineselawry@gmail.com</p>
+          <p>Telefon:+454701992</p>
+        </div>
+        <img src="img/iconer.webp" alt="billede af icons sociale medier" class="footer-img" />
+        <div class="footer-links">
+          <p>Copyright © 2025 Seraphine Selawry</p>
+        </div>
+      </div>
+    </footer>
+    <script src="menu.js" defer></script>
+  </body>
 </html>
