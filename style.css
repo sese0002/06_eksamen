@@ -61,6 +61,14 @@ header {
 .logo img {
   width: 50px;
   height: 50px;
+  padding: 5px;
+}
+
+@media (min-width: 800px) {
+  .logo img {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 nav {
@@ -196,8 +204,9 @@ p {
 
 @media (min-width: 800px) {
   p {
-    font-size: 17px;
+    font-size: 14.5px;
     line-height: 49px;
+    max-width: 40rem;
   }
 }
 
@@ -327,10 +336,7 @@ p {
 
 @media (min-width: 768px) {
   .linje {
-    width: 100%;
-    max-width: 700px; /* or whatever max size you want */
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
 }
 
@@ -382,7 +388,7 @@ p {
   .image_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem; /* or 2rem */
+    gap: 5rem; /* or 2rem */
     justify-items: center;
     margin: 0 auto;
     max-width: 1000px; /* Optional, to control layout width */
@@ -400,7 +406,7 @@ p {
     display: block;
     text-decoration: underline;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
     text-align: center;
   }
@@ -480,7 +486,6 @@ footer {
 
 .body_1 {
   padding: 2rem;
-  margin: 1rem 0;
   max-width: 800px;
 }
 
@@ -492,18 +497,33 @@ footer {
 @media (min-width: 800px) {
   .body_1 {
     margin-left: 8%;
-    max-width: 60%;
-    padding: 1rem;
+    max-width: 80%;
   }
 
   .body_1 h1 {
-    font-size: 60px;
+    font-size: 58px;
+  }
+}
+
+.erhverserfaring h1 {
+  font-size: 43px;
+}
+
+@media (min-width: 800px) {
+  .erhverserfaring h1 {
+    font-size: 44px;
   }
 }
 
 .h1_seraphine {
   margin-left: 5%;
   margin-bottom: 6%;
+}
+
+@media (min-width: 800px) {
+  .h1_seraphine {
+    font-size: 50px;
+  }
 }
 
 .om_tekst::first-letter {
@@ -523,6 +543,14 @@ footer {
   height: auto;
   margin-bottom: 5%;
   margin-top: 5%;
+}
+
+@media (min-width: 800px) {
+  .icon {
+    width: 10%;
+    padding: 5px;
+    margin-left: 35%;
+  }
 }
 
 .om_billede {
@@ -563,7 +591,14 @@ h4 {
   font-size: 110%;
   font-family: "Cormorant SC";
   font-weight: 600;
-  margin-top: 8%;
+  margin-top: 7%;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 125%;
+    margin-top: 3%;
+  }
 }
 
 h5 {
@@ -572,16 +607,17 @@ h5 {
   font-size: 90%;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 768px) {
+  h5 {
+    font-size: 105%;
+  }
 }
 
-.container img {
+.container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .scroll-box {
@@ -595,7 +631,7 @@ h5 {
   overflow-y: auto;
   overflow-x: hidden;
   line-height: 1.5;
-  margin-top: 8%;
+  margin-top: 14%;
   box-sizing: border-box;
   margin-bottom: 10%;
 }
@@ -609,6 +645,28 @@ h5 {
   width: 0.5px;
   background-color: black;
   z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .scroll-box {
+    position: relative;
+    width: 900px;
+    height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+
+  .scroll-box::before {
+    top: 35%;
+    bottom: -300%;
+    left: 20px;
+    width: 0.5px;
+    z-index: 0;
+  }
 }
 
 .erhverserfaring {
@@ -625,33 +683,62 @@ li {
   font-size: 85%;
 }
 
-@media (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .scroll-box {
-    flex: 1;
-    max-width: 100%;
-    height: 300px;
-  }
-}
-
 .uddannelse {
-  margin-bottom: 5%;
+  padding: 10px;
+  gap: 10px;
 }
 
 .uddannelse h1 {
   margin-bottom: 6%;
 }
 
+@media (min-width: 768px) {
+  .uddannelse h1 {
+    margin-bottom: 1%;
+  }
+}
+
+.uddannelse_container {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .uddannelse_container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 190px; /* Adjusts spacing */
+    margin: 0 auto;
+    text-align: start;
+    text-wrap: nowrap;
+  }
+}
+
 .uddannelse p {
-  font-family: "Cormorant SC";
-  font-size: 100%;
-  padding-left: 4%;
+  font-family: "Antic Didone";
+  font-size: 17px;
+  padding-left: 5%;
+}
+
+@media (min-width: 768px) {
+  .uddannelse p {
+    font-size: 16px;
+  }
+}
+
+.om_p {
+  max-width: 1000px;
+  margin: 0 auto; /* centers it */
+  padding: 0 1rem; /* optional: for breathing room on smaller screens */
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .om_p p {
+    font-size: 14.4px;
+    max-width: 90rem;
+    text-align: justify;
+    padding-bottom: 30px;
+  }
 }
 
 .button_container {
@@ -661,7 +748,7 @@ li {
 .button {
   background-color: #f9f4e2;
   color: black;
-  padding: 7px 13px;
+  padding: 3px 20px;
   border-radius: 18px;
   border: 0.5px solid black;
   cursor: pointer;
@@ -674,6 +761,13 @@ li {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .button {
+    padding: 2px 30px;
+    font-size: 20px;
+  }
+}
+
 .button:hover {
   text-decoration: underline;
   transform: scale(1.05);
@@ -684,7 +778,24 @@ li {
   margin-top: 10%;
 }
 
+@media (min-width: 768px) {
+  .h1_underline h1 {
+    font-size: 42px;
+  }
+
+  .h1_underline {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+}
+
 /******** PORFOLIO *********/
+
+.baggrundsfarve {
+  padding: 2rem;
+  background-color: #fafafa;
+  border-radius: 50px;
+}
 
 .body_2 {
   padding: 2rem;
@@ -704,7 +815,7 @@ li {
   padding: 5px;
   padding-left: 5%;
   margin: 15px 0;
-  width: 200px;
+  width: 240px;
   font-size: 110%;
   font-family: "Annie Use Your Telescope";
 }
@@ -716,6 +827,18 @@ li {
 .button_portfolio:hover {
   text-decoration: underline;
   transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button_portfolio {
+    font-size: 150%;
+    padding-left: 2%;
+  }
+
+  .button_portfolio:hover {
+    text-decoration: underline;
+    transform: scale(1.08);
+  }
 }
 
 /****** PORTFOLIO - MOBILSITE */
@@ -746,10 +869,26 @@ li {
   background-color: black;
 }
 
+@media (min-width: 768px) {
+  .overskrifter h2 {
+    margin-top: 4%;
+    font-size: 280%;
+  }
+
+  .overskrifter h2::after {
+    margin-left: 70px;
+    width: 850px;
+  }
+
+  .overskrifter h3 {
+    margin-bottom: 5%;
+  }
+}
+
 .portfolio_tekst h2 {
-  font-family: "Pinyon Script";
+  font-family: "Cormorant SC";
   font-size: 200%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .portfolio_tekst a {
@@ -760,6 +899,24 @@ li {
 }
 
 .portfolio_tekst ul {
+  list-style-type: circle; /* default, you can also use circle, square, etc. */
+  padding-left: 20px;
+}
+
+.portfolio_tekst1 h2 {
+  font-family: "Cormorant SC";
+  font-size: 180%;
+  margin-top: 2%;
+}
+
+.portfolio_tekst1 a {
+  font-family: "Antic Didone";
+  font-size: 90%;
+  line-height: 100%;
+  color: black;
+}
+
+.portfolio_tekst1 ul {
   list-style-type: circle; /* default, you can also use circle, square, etc. */
   padding-left: 20px;
 }
@@ -776,6 +933,36 @@ li {
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .container_portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+  }
+
+  .video-container {
+    width: 700px;
+    height: auto;
+    object-fit: contain;
+    margin-right: -5%;
+  }
+
+  @media (min-width: 768px) {
+    .mobil-container {
+      width: 550px;
+      height: auto;
+      object-fit: contain;
+      margin-right: -5%;
+    }
+  }
+
+  .portfolio_tekst1 a {
+    font-size: 100%;
+  }
+}
+
 .citat p {
   display: flex;
   justify-content: center;
@@ -783,10 +970,16 @@ li {
   text-align: center;
   margin: 20px auto;
   font-family: "Pinyon Script";
-  font-size: 140%;
+  font-size: 150%;
   width: 90%;
   line-height: 190%;
   padding: 4%;
+}
+
+@media (min-width: 768px) {
+  .citat p {
+    font-size: 160%;
+  }
 }
 
 .mobilsite_img {
@@ -796,6 +989,22 @@ li {
   margin: 20px auto;
   width: 90%;
   padding: 3%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.mobilsite_img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  padding: 3%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
 }
 
 .mobil-container {
@@ -808,6 +1017,55 @@ li {
 .mobil-container video {
   width: 40%;
   height: auto;
+}
+
+/* mobil version tekst billede order*/
+.process-section {
+  display: flex;
+  flex-direction: column; /* mobile default: text over image */
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.portfolio_tekst {
+  max-width: 100%;
+}
+
+/* DESKTOP layout */
+@media (min-width: 768px) {
+  .process-section {
+    flex-direction: row-reverse; /* text right, image left */
+    align-items: flex-start; /* align tops */
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .portfolio_tekst {
+    width: 60%;
+    text-align: justify;
+  }
+
+  .portfolio_tekst1 {
+    width: 60%;
+    text-align: justify;
+  }
+
+  .mobilsite_img {
+    width: 55%;
+  }
+
+  .portfolio_tekst h2 {
+    margin-top: 0;
+    font-size: 210%;
+    padding-bottom: 3%;
+  }
+
+  .portfolio_tekst1 h2 {
+    margin-top: 50px;
+    font-size: 200%;
+    padding-bottom: 3%;
+  }
 }
 
 /************* PORTFOLIO Animation *************/
