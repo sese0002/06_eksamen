@@ -1,0 +1,7 @@
+# Videos
+*.mp4
+*.mov
+*.avi
+
+# macOS-specific files
+.DS_Store

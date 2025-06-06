@@ -24,6 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet" />
     <title>Redesign</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
   </head>
   <body>
     <header>
@@ -47,44 +48,53 @@
       </nav>
     </header>
     <main class="body_1">
-      <h1>Mine projekter:</h1>
-      <div class="row">
-        <a href="portfolio.html" class="button_portfolio">Mobilsite</a>
-        <a href="emnesite.html" class="button_portfolio">Emnesite</a>
-      </div>
-      <div class="column">
-        <a href="animation.html" class="button_portfolio">Animation / spil</a>
-        <a href="redesign.html" class="button_portfolio active">Virksomhedssite</a>
-      </div>
-
-      <div class="overskrifter_02">
-        <h2>Virksomhedssite</h2>
-        <h3>04_Grundlæggende_Indhold</h3>
+      <div class="baggrundsfarve">
+        <h1>Mine projekter:</h1>
+        <div class="row">
+          <a href="portfolio.html" class="button_portfolio">Mobilsite</a>
+          <a href="emnesite.html" class="button_portfolio">Emnesite</a>
+        </div>
+        <div class="column">
+          <a href="animation.html" class="button_portfolio">Animation / spil</a>
+          <a href="redesign.html" class="button_portfolio active">Virksomhedssite</a>
+        </div>
       </div>
 
-      <div class="portfolio_tekst">
-        <h2>1. Løsning:</h2>
-        <p>Jeg udviklede min første hjemmeside med fokus på brugervenlighed og overskuelig navigation. Opgaven gik ud på at opbygge en grundlæggende struktur med forside, undersider og en navigationsmenu. Sitet blev kodet med et responsivt layout, så det tilpasser sig både mobiltelefoner og computerskærme, og dermed giver en god brugeroplevelse på tværs af enheder.</p>
+      <div class="overskrifter">
+        <h2>Virskomhed</h2>
+        <h3>01_Grundlæggende_Web</h3>
       </div>
 
-      <div class="video-container">
-        <video autoplay muted loop playsinline><source src="img/redesign_portfolio.mov" /></video>
+      <div class="container_portfolio">
+        <div class="portfolio_tekst">
+          <h2>1. Løsning:</h2>
+          <p>I denne opgave arbejdede vi i grupper med at redesigne en eksisterende virksomheds hjemmeside. Min gruppe valgte Hanoi Alley og udviklede en ny visuel og funktionel løsning baseret på deres behov. Opgaven afsluttet i en fremlæggelse af det færdige produkt ved hjælp af præsentationsformen Pecha Kucha.</p>
+        </div>
+
+        <div class="video-container">
+          <video autoplay muted loop playsinline><source src="img/redesign_portfolio.mov" /></video>
+        </div>
       </div>
 
-      <div class="portfolio_tekst">
-        <h2>2. Process:</h2>
-        <p>Jeg arbejdede ud fra udleveret tekst, billeder, wireframes og layoutdiagrammer. Jeg byggede HTML-strukturen og stylede den med CSS ved hjælp af margin, padding, skrifttyper og farver. Jeg indsatte en navigationsmenu og testede løbende sitet for at sikre, at layoutet fungerede responsivt og koden var korrekt valideret.</p>
-      </div>
-      <img class="mobilsite_img" src="img/wireframes.webp" alt="wireframes Hanoi Alley" />
+      <div class="process-section">
+        <div class="portfolio_tekst">
+          <h2>2. Process:</h2>
+          <p>Vi startede med research og planlægning, hvor vi brugte værktøjer som Trello, Teamkontrakt og Scrum til at strukturere opgaven. Det var første gang, vi samarbejdede om kodning, og vi brugte GitHub til at dele og organisere vores kode i samme projekt. Hele forløbet byggede på tæt gruppearbejde, hvor vi skulle være enige om designvalg og fordele ansvaret imellem os.</p>
+        </div>
 
-      <div class="portfolio_tekst">
-        <h2>3. Læring:</h2>
-        <p>Gennem denne opgave fik jeg mit første indblik i webudvikling og blev introduceret til centrale CSS-begreber som margin, padding, fonte og farver. Jeg lærte, hvordan man opbygger en grundlæggende struktur med undersider og navigation, og hvordan man skaber et layout, der tilpasser sig forskellige skærmstørrelser. Jeg blev også introduceret til vigtigheden af validering af kode og opmærksomhed på struktur og brugervenlighed i designet.</p>
+        <img class="mobilsite_img" src="img/wireframes.webp" alt="billede af wireframes" />
+      </div>
+      <div class="container_portfolio">
+        <div class="portfolio_tekst">
+          <h2>3. Læring:</h2>
+          <p>I dette projektforløb fik jeg styrket mine evner inden for projektstyring, gruppearbejde og fælles kodning. Det var en værdifuld erfaring at skulle afgive kontrol og indgå kompromisser omkring både design og opgaveløsning. Jeg lærte, hvor vigtigt god kommunikation og samarbejde er for at opnå et stærkt fælles resultat. Brug af værktøjer som Trello, Scrum og GitHub hjalp os med at holde overblik og arbejde effektivt sammen. Forløbet gav mig en større forståelse for, hvordan man arbejder i team, og hvordan man skaber noget i fællesskab, som er stærkere end det, man kunne have lavet alene.</p>
+        </div>
+
+        <div class="mobil-container">
+          <video autoplay muted loop playsinline><source src="img/redesign_mobil.mov" /></video>
+        </div>
       </div>
 
-      <div class="mobil-container">
-        <video autoplay muted loop playsinline><source src="img/redesign_mobil.mov" /></video>
-      </div>
       <hr class="linje" />
 
       <div class="portfolio_tekst">
@@ -110,6 +120,7 @@
         </div>
       </div>
     </footer>
-    <script src="menu.js" defer></script>
+    <script src="js/menu.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
