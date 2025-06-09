@@ -436,7 +436,7 @@ p {
 footer {
   padding: 10px 0;
   text-align: center;
-  background-image: url(../img/footer.webp);
+  background-image: url(img/footer.webp);
   background-position: center;
   background-repeat: repeat;
 }
