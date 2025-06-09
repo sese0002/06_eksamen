@@ -199,7 +199,6 @@ h3 {
 
 body {
   line-height: 45px;
-  text-align: justify;
 }
 
 p {
@@ -210,17 +209,21 @@ p {
 
 @media (min-width: 800px) {
   p {
-    font-size: 14.5px;
+    font-size: 15px;
     line-height: 49px;
     max-width: 40rem;
+  }
+
+  body {
+    text-align: justify;
   }
 }
 
 .video_baggrund {
   position: relative;
-  height: 85vh;
+  height: 75vh;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .forside_video {
@@ -257,7 +260,7 @@ p {
   }
 
   .video_baggrund {
-    white-space: wrap;
+    white-space: normal;
     height: 88vh;
   }
 
@@ -270,6 +273,11 @@ p {
     h3 {
       font-size: 120%;
     }
+  }
+
+  .video_tekst h3 {
+    font-size: 100%;
+    padding: 2%;
   }
 }
 
@@ -355,6 +363,11 @@ p {
   color: black;
 }
 
+.billede_tekst:hover {
+  color: #dfa7b3;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .container1 {
     display: flex;
@@ -423,10 +436,9 @@ p {
 footer {
   padding: 10px 0;
   text-align: center;
-  background-image: url(/img/footer.webp);
-  background-size: cover;
+  background-image: url(../img/footer.webp);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .footer-container {
@@ -437,6 +449,10 @@ footer {
   transition: 0.3s;
   padding: 10px 20px;
   margin: 0 auto;
+}
+
+.footer-container p {
+  font-family: "Cormorant SC";
 }
 
 .footer-info {
@@ -464,7 +480,7 @@ footer {
 }
 
 .footer-links:hover {
-  color: #f48e8e;
+  color: #dfa7b3;
   cursor: pointer;
 }
 
@@ -493,7 +509,6 @@ footer {
 .body_1 {
   padding: 2rem;
   max-width: 800px;
-  text-align: justify;
 }
 
 .body_1 h1 {
@@ -505,6 +520,7 @@ footer {
   .body_1 {
     margin-left: 8%;
     max-width: 80%;
+    text-align: justify;
   }
 
   .body_1 h1 {
@@ -685,7 +701,7 @@ ul {
 
 li {
   margin-bottom: 3px;
-  font-size: 85%;
+  font-size: 90%;
 }
 
 .uddannelse {
@@ -713,7 +729,7 @@ li {
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 190px; /* Adjusts spacing */
     margin: 0 auto;
-    text-wrap: nowrap;
+    white-space: nowrap;
     place-items: center;
   }
 }
@@ -739,7 +755,7 @@ li {
 
 @media (min-width: 768px) {
   .om_p p {
-    font-size: 14.4px;
+    font-size: 15px;
     max-width: 90rem;
     text-align: justify;
     padding-bottom: 30px;
