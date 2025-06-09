@@ -889,7 +889,7 @@ li {
   top: 50%;
   left: 270px; /* fixed distance from the left edge of the h2's container */
   height: 1px;
-  width: 120px;
+  width: 95px;
   background-color: black;
   transform: translateY(-50%);
 }
